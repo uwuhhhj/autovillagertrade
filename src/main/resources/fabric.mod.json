@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "id": "addon-template",
+  "id": "autovillagetrade",
   "version": "${version}",
-  "name": "Addon Template",
-  "description": "An addon template for Meteor Client addons.",
+  "name": "autovillagetrade",
+  "description": "村民自动交易.",
   "authors": [
     "seasnail"
   ],

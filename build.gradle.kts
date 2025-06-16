@@ -1,5 +1,5 @@
 plugins {
-    id("fabric-loom") version "1.10-SNAPSHOT"
+    id("fabric-loom") version "1.9-SNAPSHOT"
 }
 
 base {
@@ -36,20 +36,15 @@ tasks {
             "mc_version" to project.property("minecraft_version"),
         )
 
-        inputs.properties(propertyMap)
-
-        filteringCharset = "UTF-8"
-
         filesMatching("fabric.mod.json") {
             expand(propertyMap)
         }
     }
 
     jar {
-        inputs.property("archivesName", project.base.archivesName.get())
-
+        val licenseSuffix = project.base.archivesName.get()
         from("LICENSE") {
-            rename { "${it}_${inputs.properties["archivesName"]}" }
+            rename { "${it}_${licenseSuffix}" }
         }
     }
 

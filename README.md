@@ -32,7 +32,9 @@ A template to allow easy usage of the Meteor Addon API.
 │       │               │── hud
 │       │               │   ╰── HudExample
 │       │               │── modules
-│       │               │   ╰── ModuleExample
+│       │               │   │── ModuleExample
+│       │               │   │── SMCSmithingDupe
+│       │               │   ╰── AutoTrade
 │       │               ╰── AddonTemplate
 │       ╰── resources
 │           │── assets
